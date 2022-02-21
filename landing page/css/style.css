@@ -1,0 +1,237 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+body {
+  background-color: #1f2937;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header,main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  /*padding-top: 1rem;*/
+}
+
+header ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+}
+
+main{
+ justify-content: none;
+ padding: 5% 0;
+}
+
+.verticalDisplay{
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionOne{
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.whiteBackground h2{
+  padding: 40px 0;
+}
+
+.grayBackground{
+  background: rgb(230, 227, 227);
+  margin-top: -10px;
+  padding: 50px 0;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+}
+
+.customer{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.weisBackground{
+  background: white;
+}
+
+.fixWidth{
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #3882F6;
+  border-radius: 0.5rem;
+}
+
+.centering{
+  align-self: center;
+}
+
+.centering a{
+  border: 2px solid white;
+  border-radius: 0.25rem;
+}
+
+.container{
+  padding: 50px 0;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.directDiv{
+  padding: 20px 0;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+header li, header a, main p{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 2.5rem;
+  
+}
+
+header h2{
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
+  color: white;
+}
+
+
+h1{
+  font-family: 'Roboto Serif', sans-serif;
+  color: white;
+  font-size: 5rem;
+}
+
+.button{
+  color: white;
+  background: #3882F6;
+  border-radius: 0.2rem;
+  padding: 5px 10px;
+  font-size: 2rem;
+  font-family: 'Roboto',sans-serif;
+  width: 16%;
+  text-align: center;
+}
+
+main img{
+  border-radius: 0.5rem;
+}
+
+.whiteBackground{
+  background: white;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.whiteBackground img{
+  border-radius: 0.3rem;
+}
+
+.whiteBackground h2{
+  font-size: 4.5rem;
+  font-family: 'Roboto',sans-serif;
+  font-weight: bold;
+}
+
+.reduceMarginTop{
+  margin-top: -4px;
+  font-size: 1.6rem;
+}
+
+.shrink{
+  align-self: center;
+  height: 60%;
+  width: 40%;
+}
+
+.nameSize, .customer h4{
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.grayBackground p{
+  width: 1200px;
+  font-family: 'Roboto',sans-serif;
+  font-style: italic;
+  font-size: 3rem;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.grayBackground img{
+  height: 20%;
+  width: 10%;
+  border-radius: 50%;
+}
+
+.directDiv h3, .directDiv p{
+  font-size: 2.6rem;
+  font-weight:bold ;
+  font-family: 'Roboto',sans-serif;
+  color: white;
+}
+
+.directDiv p{
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+
+
+
+
